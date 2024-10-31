@@ -1,0 +1,295 @@
+:root {
+    --text: rgb(165, 202, 207);
+    --background: #f9fefc;
+    --primary: #d82622;
+    --secondary: #8198e9;
+    --accent: #6f59e2;
+    --titre: "Press Start 2P", system-ui;
+    --font2: "Roboto Slab", serif;
+  }
+
+  h2{
+    text-align: center;
+    padding-top: 30%;
+    font-family: var(--titre);
+    font-size: 60px;
+    color: var(--primary);
+}
+
+h3{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-family: var(--titre);
+    color: var(--primary);
+}
+
+h4{
+    text-align: center;
+    font-family: var(--titre);
+}
+
+p{
+    font-family: var(--font2);
+}
+
+  body{
+    background: url(https://www.gamespot.com/a/uploads/original/gamespot/images/2007/094/reviews/788441-938875_20070405_002.jpg);
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    font-family: var(--font2);
+    color: var(--secondary);
+}
+
+main{
+    background-color: black;
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    overflow-x: hidden;
+}
+
+.parallax-image
+ {
+     background-image: url(https://www.francebleu.fr/s3/cruiser-production/2021/06/1a1b71f4-21c7-4131-84e9-bb8747a54dbc/1200x680_top-10-n64-02_1.jpg);
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     min-height: 700px;
+ }
+
+
+ #présentation p{
+    font-size: 20px;
+    margin: 0 30px 0 30px;
+ }
+
+
+
+#présentation button{
+    margin-left: 48%;
+    background: url(images/manette_n64.png);
+    width: 68px;
+    height: 60px;
+    border-radius: 10%;
+}
+
+span{
+    color: white;
+    background-color: rgb(96, 96, 96);
+    opacity: 0.8;
+}
+
+.popup01 {
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0; right: 0;
+    bottom: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+  }
+
+  .popup01:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .popup_content {
+    border-radius: 4px;
+    position: relative;
+    width: 723px;
+    height: 360px;
+    max-width: 90%;
+    background: white;
+    padding: 1.5em 2em;
+    color: black;
+  }
+  
+  .popup_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: grey;
+    text-decoration: none;
+  }
+
+  .popup_close:hover{
+    color: red;
+  }
+
+
+#Accessoires{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scroll 10s linear infinite;
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-92.5vw);
+    }
+  }
+
+#Accessoires p{
+    text-align: center;
+}
+
+ .accessoires{
+    width: 300px;
+    height: 300px;
+    margin: 0 20px 0 20px;
+ }
+
+#jeux{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#jeux div{
+    margin: 0 50px;
+}
+
+#jeux img{
+    height: 300px;
+    width: 200px;
+}
+
+
+ #QUIZZ{
+    background-color: var(--background);
+    width: 700px;
+    height: 400px;
+    border-radius: 10%;
+    margin: 0 17% 100px 17%; 
+ }
+
+
+#QUIZZ h4{
+    padding-top: 20px;
+    margin-left: 250px;
+    font-size: 20px;
+    font-family: var(--titre);
+    
+}
+
+.slider 
+{
+    width: 700px;
+    text-align: center;
+    margin-left: 17%;
+    overflow-x: hidden;
+}
+
+.slides 
+{
+    display: flex;
+    
+}
+
+.slides > div 
+{
+    flex-shrink: 0;
+    width:700px;
+    margin-right: 50px;
+    border-radius: 10px;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slider > a:focus 
+{
+    background: #000;
+}
+
+#slide-1
+{
+    display: block;
+}
+
+#slide-2
+{
+    display: block;
+}
+
+#slide-3
+{
+    display: block;
+}
+
+#slide-4
+{
+    display: block;
+}
+
+#slide-5
+{
+    display: block;
+}
+
+#slide-6{
+    display: block;
+}
+
+.slide{
+    display: flex;
+    flex-direction: column;
+}
+
+.réponse{
+    margin: 10px 0;
+}
+
+.slide p
+{
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
+    margin-top: 40px;
+    color: var(--text);
+}
+
+.slide button{
+    margin-top: 30px;
+    border: solid var(--primary);
+    width: 100px;
+    background-color: transparent;
+    color: var(--secondary);
+}
+
+#slide-6 img{
+    margin-left: 30px;
+}
+
+#slide-6 img:hover{
+    cursor: url(images/piece-de-monnaie.png), auto;
+}
+
+#rejouer{
+    margin-top: -100px;
+    font-family: var(--titre);
+}
+
+#Result{
+    font-size: 10px;
+}
+

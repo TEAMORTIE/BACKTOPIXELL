@@ -1,0 +1,200 @@
+:root {
+  --text: #020906;
+  --background: #f9fefc;
+  --primary: #d82622;
+  --secondary: #8198e9;
+  --text: rgb(165, 202, 207);
+  --accent: #6f59e2;
+  --titre: "Press Start 2P", system-ui;
+}
+
+body {
+  background-image: url(https://img.freepik.com/free-vector/gradient-zoom-effect-blue-background_23-2149762303.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: "Roboto";
+  color: var(--text);
+}
+header {
+  color: var(--secondary);
+  background: linear-gradient(var(--accent), rgb(0, 0, 0));
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  width: 100%;
+  height: 6%;
+  position: fixed;
+}
+
+#nom {
+  display: flex;
+  align-items: center;
+  margin-left: 15%;
+}
+
+h1 {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--titre);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  margin-top: -20px;
+  margin-bottom: -30px;
+}
+
+nav {
+  width: 80%;
+  justify-content: end;
+  margin-right: 15%;
+  display: flex;
+}
+
+nav a {
+  color: var(--secondary);
+  font-family: var(--titre);
+  text-decoration: none !important;
+  text-align: center;
+  font-size: 1rem;
+  border-right-style: solid;
+  padding: 1.5rem;
+  border-width: 1px;
+  transition: all 0.3s ease;
+}
+
+nav .navigation:hover,
+#consoles:hover > a {
+  background-color: #020906;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+}
+
+#consoles {
+  position: relative;
+  padding-top: 10%;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  margin-top: 10%;
+  left: 0;
+  background-color: black;
+  list-style: none;
+}
+
+#consoles:hover .submenu {
+  display: block;
+}
+
+.submenu li a {
+  display: block;
+  padding: 1rem;
+  color: var(--secondary);
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.submenu li a:hover {
+  background-color: #6f59e2;
+}
+p {
+  font-size: 20px;
+  font-style: var(--background);
+  font-family: "Times New Roman", Times, serif;
+  padding: 50px;
+}
+
+h2 {
+  font-size: 70px;
+  font-style: var(--text);
+  font-family: var(--titre);
+  margin-left: 35%;
+  padding-top: 10rem;
+}
+.container {
+  width: 70%;
+  background-color: black;
+  background-position: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  align-content: center;
+  flex-direction: column;
+  margin-left: 15%;
+}
+
+.petit-test1 {
+  display: flex;
+}
+
+body {
+  background-image: url(https://www.cgmagonline.com/wp-content/uploads/2019/01/new-super-mario-bros-u-deluxe-nintendo-switch-review.jpg);
+  background-attachment: fixed;
+  display: flex;
+  background-size: cover;
+}
+
+.container {
+  max-width: 6000px;
+  margin: auto;
+}
+
+.ivi {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+button {
+  width: 60%;
+  height: 50px;
+}
+
+.collapse {
+  margin-top: 40px;
+  background-color: rgb(125, 125, 125);
+  border-radius: 5px;
+  color: #020906;
+}
+
+h3 {
+  color: red;
+  font-family: var(--titre);
+}
+
+.collapse p {
+  color: #020906;
+}
+footer {
+  text-align: center;
+  background-color: black;
+  width: 70%;
+  margin-left: 15%;
+  color: white !important;
+  padding-top: 5rem;
+  font-size: 0.8rem;
+  font-weight: 100;
+  padding-bottom: 1rem;
+}
+footer p {
+  position: relative;
+}
+#politique {
+  font-size: 1.7rem !important;
+  text-align: left;
+  line-height: 5rem;
+}
+#service {
+  text-align: left !important;
+}
